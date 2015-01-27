@@ -3,7 +3,7 @@
 
 import main
 
-path= input('请输入存资料的文件路径,例('/home/hyde')')
+path= '/home/hyde/stock'
 
 s = main.stockdata(path)
 s.init()
