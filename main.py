@@ -25,7 +25,7 @@ class stockdata:
     
     def num(self):
         No = 1
-        fp = open('/home/hyde/original_time.txt')
+        fp = open(self.path + '/original_time.txt')
         time_o = float(fp.read())
         fp.close()
         
