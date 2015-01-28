@@ -26,7 +26,7 @@ class stockdata:
     
     def log(self):
         fp = open(self.path + '/cronlog.txt', 'a')
-        fp.write(str(datetime.datetime(time.localtime().tm_year,time.localtime().tm_mon,time.localtime().tm_mday,time.localtime().tm_hour,time.localtime().tm_min,time.localtime().tm_sec)) + ' : renew.py run!')
+        fp.write(str(datetime.datetime(time.localtime().tm_year,time.localtime().tm_mon,time.localtime().tm_mday,time.localtime().tm_hour,time.localtime().tm_min,time.localtime().tm_sec)) + ' : renew.py run!\n')
         fp.close()
     
     def num(self):
