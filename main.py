@@ -21,7 +21,13 @@ class stockdata:
         try:
             os.mknod(path+'/original_time.txt')
             os.mknod(path+'/log.txt')
+            os.mknod(path+'/cronlog.txt')
         except: None
+    
+    def log(self):
+        fp = open(self.path + '/cronlog.txt', 'a')
+        fp.write(str(datetime.datetime(time.localtime().tm_year,time.localtime().tm_mon,time.localtime().tm_mday,time.localtime().tm_hour,time.localtime().tm_min,time.localtime().tm_sec)) + ' : renew.py run!')
+        fp.close()
     
     def num(self):
         No = 1
