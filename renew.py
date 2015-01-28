@@ -7,3 +7,4 @@ path = '/home/hyde/stock'
 
 s = main.stockdata(path)
 s.renew()
+s.log()
